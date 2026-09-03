@@ -2,6 +2,10 @@
 
 ## Debian vs Rocky Linux
 
+### Debian GNU/Linux
+
+// TODO
+
 ### Rocky Linux
 
 [Rocky Linux - Wikipedia](https://en.wikipedia.org/wiki/Rocky_Linux)
@@ -9,9 +13,13 @@
 A free and open source downstream release of [Red Hat Enterprise Linux
 (RHEL)](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)
 
-// ...
+// TODO
 
 ## AppArmor vs SELinux
+
+### AppArmor
+
+// TODO
 
 ### SELinux
 
@@ -48,8 +56,12 @@ on administratively set and fixed policy.
 **SELinux** provides mandatory access control.
 
 
-// ...
-
 ## VirtualBox vs UTM
 
-// ...
+### VirtualBox
+
+// TODO
+
+### UTM
+
+// TODO
