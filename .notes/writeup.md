@@ -113,7 +113,7 @@ A failed authenticity check requires action:
     - Re-download `SHA512SUMS` and `SHA512SUMS.sign` files together from
       [official sources](https://get.debian.org/images/release/current/amd64/)
     - Double-check if the imported key is the correct and current key. Imported
-      keys can be listed with `gpg --list-keys` (compare the key's
-      fingerprints).
+      keys can be listed with `gpg --list-keys` (compare key fingerprints).
     - If the failure persists, try a different network and machine.
-    - If the failure persists and is reproducible, report it to the **Debian Security Team** (security@debian.org)
+    - If the failure persists and is reproducible, report it to the **Debian
+      Security Team** (security@debian.org)
