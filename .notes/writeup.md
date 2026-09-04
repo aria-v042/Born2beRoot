@@ -17,7 +17,6 @@ GNU/Linux](https://www.debian.org/releases/stable/).
 *As of this writeup: **Debian GNU/Linux 13.6, "trixie"***
 
 - [Download Debian](https://www.debian.org/distrib/)
-- [Installing Debian](https://www.debian.org/releases/stable/debian-installer/)
 
 A [network install](https://www.debian.org/CD/netinst/) is recommended: the
 *"netinst"* image contains just the minimal amount of software to install the
@@ -28,7 +27,7 @@ base system and fetch the remaining packages over the Internet.
     > Look for the file named `debian-x.x.x-amd64-netinst.iso`
 
 
-#### 1.1 Verify authenticity of the image file
+#### Recommended: Verify authenticity of the image file
 
 Use the available checksum files to confirm that the downloaded image is the one
 created and released by Debian and has not been corruped or tampered with.
@@ -94,3 +93,27 @@ Confirm that the checksum file used to validate the ISO is signed by Debian.
   > value with the fingerprint of the key you imported from
   > [Debian](https://www.debian.org/CD/verify)
 
+##### In case of failed authenticity verification
+
+A failed authenticity check requires action:
+
+- **SHA-512 mismatch:** The ISO file is corrupted or has been altered.
+
+    - Re-download the ISO, `SHA512SUMS`, and `SHA512SUMS.sign` files at the same
+      time, from [official sources](https://get.debian.org/images/release/current/amd64/) rather than a third-party mirror and check again.
+    - If the mismatch persists, try a different network and machine and repeat
+      the previous step.
+    - If the mismatch still persists, contact the **Debian CD/Image Team** (debian-cd@lists.debian.org)
+
+<br>
+
+- **"BAD signature" result:** The checksums file's content was altered after signing
+  or is being corrupted.
+
+    - Re-download `SHA512SUMS` and `SHA512SUMS.sign` files together from
+      [official sources](https://get.debian.org/images/release/current/amd64/)
+    - Double-check if the imported key is the correct and current key. Imported
+      keys can be listed with `gpg --list-keys` (compare the key's
+      fingerprints).
+    - If the failure persists, try a different network and machine.
+    - If the failure persists and is reproducible, report it to the **Debian Security Team** (security@debian.org)
