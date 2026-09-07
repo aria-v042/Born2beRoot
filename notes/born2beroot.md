@@ -16,7 +16,7 @@ GNU/Linux](https://www.debian.org/releases/stable/).
 
 *As of this writeup: **Debian GNU/Linux 13.6, "trixie"***
 
-- [Download Debian](https://www.debian.org/distrib/)
+- [Download Debian](https://www.debian.org/download)
 
 A [network install](https://www.debian.org/CD/netinst/) is recommended: the
 *"netinst"* image contains just the minimal amount of software to install the
