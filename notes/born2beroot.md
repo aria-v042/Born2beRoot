@@ -1,54 +1,54 @@
 # Born2beRoot - Writeup by ***aria***
 ***frodrig2** - September 2026 - Project Version 5.2*
 
-## Index
+# Index
 
-- [Debian GNU/Linux (amd64)](##Debian-GNU/Linux-(amd64))
-    - [1. Download the installation image](###1.-Download-the-installation-image)
-        - [Verify authenticity of the image
-          file](####Recommended:-Verify-authenticity-of-the-image-file)
-            - [Verify the SHA-512 checksum](#####Verify-the-SHA-512-checksum)
-            - [Verify signing key of the checksum file](#####Verify-signing-key-of-the-checksum-file)
-            - [In case of failed authenticity verification](#####In-case-of-failed-authenticity-verification)
+- [1. Download the installation image](#1-download-the-installation-image)
+    - [Verify authenticity of the image
+      file](#recommended-verify-authenticity-of-the-image-file)
+        - [Verify the SHA-512 checksum](#verify-the-sha-512-checksum)
+        - [Verify signing key of the checksum file](#verify-signing-key-of-the-checksum-file)
+        - [In case of failed authenticity verification](#in-case-of-failed-authenticity-verification)
 
-## Debian GNU/Linux (amd64)
+# Debian GNU/Linux for 64-bit PC
 
 This document is *immensely* supported by the documentation provided by Debian:
 
-- [Debian GNU/Linux Installation Guide for 64-bit PC (amd64)](https://www.debian.org/releases/stable/amd64/install.en.pdf)
-- [DebianInstaller FAQ](https://wiki.debian.org/DebianInstaller/FAQ)
-- [Debian Wiki - DebianInstaller](https://wiki.debian.org/DebianInstaller)
+- [Debian GNU/Linux Installation Guide
+  (amd64)](https://www.debian.org/releases/stable/amd64/install.en.pdf)
+- [Debian-Installer FAQ](https://wiki.debian.org/DebianInstaller/FAQ)
+- [Debian-Installer Wiki](https://wiki.debian.org/DebianInstaller)
 
-### 1. Download the installation image
+## 1. Download the installation image
 
 Download the installation ISO image file for the [latest stable version of Debian
-GNU/Linux](https://www.debian.org/releases/stable/).
+GNU/Linux](https://www.debian.org/releases/stable/) for 64-bit PC.
 
 *As of this writeup: **Debian GNU/Linux 13.6, "trixie"***
-
-- [Download Debian](https://www.debian.org/download)
 
 A [network install](https://www.debian.org/CD/netinst/) is recommended: the
 *"netinst"* image contains just the minimal amount of software to install the
 base system and fetch the remaining packages over the Internet.
 
-- [Get latest release's `netinst` ISO image](https://get.debian.org/images/release/current/amd64/iso-cd/)
+- [Download Debian -- get latest release's
+  *netinst*](https://www.debian.org/download)
 
-    > Look for the file named `debian-x.x.x-amd64-netinst.iso`
+    > The file named `debian-x.x.x-amd64-netinst.iso`
 
 
-#### Recommended: Verify authenticity of the image file
+### Recommended: Verify authenticity of the image file
 
 Use the available checksum files to confirm that the downloaded image is the one
 created and released by Debian and has not been corruped or tampered with.
 
-- [Get latest release's checksum files](https://get.debian.org/images/release/current/amd64/iso-cd/)
+- [Download Debian -- get latest release's checksum files](https://www.debian.org/download)
 
-    > Look for the files named `SHA512SUMS` and `SHA512SUMS.sign`
+    > Right-click links `SHA512SUMS` and `Signature`/`SHA512SUMS.sign` and
+    > select *"Save Link As..."*
 
     Place the files in the same directory as the ISO file.
 
-##### Verify the SHA-512 checksum
+#### Verify the SHA-512 checksum
 
 Run `sha512sum` against the ISO and compare it with the contents of the checksum
 file.
@@ -66,7 +66,7 @@ to automatically check only the matching items from the given checksum file:
     debian-x.x.x-amd64-netinst.iso: OK
     ```
 
-##### Verify signing key of the checksum file
+#### Verify signing key of the checksum file
 
 Confirm that the checksum file used to validate the ISO is signed by Debian.
 
@@ -77,7 +77,7 @@ Confirm that the checksum file used to validate the ISO is signed by Debian.
 
         > As of this writeup: [key-DA87E80D6294BE9B.txt](https://www.debian.org/CD/key-DA87E80D6294BE9B.txt) (2011-01-05)
 
-    - Right-click the key's highlighted link and "Save link as..."
+    - Right-click the highlighted link and select *"Save Link As..."*
 
     - Import the key with `gpg --import key-XXXXXXXXXXXXXXXX.txt`
 
@@ -103,7 +103,7 @@ Confirm that the checksum file used to validate the ISO is signed by Debian.
   > value with the fingerprint of the key you imported from
   > [Debian](https://www.debian.org/CD/verify)
 
-##### In case of failed authenticity verification
+#### In case of failed authenticity verification
 
 A failed authenticity check requires action:
 
