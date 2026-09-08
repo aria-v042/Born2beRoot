@@ -3,13 +3,13 @@
 
 ## Index
 
-- [Debian GNU/Linux (amd64)](#Debian-GNU/Linux-(amd64))
-    - [1. Download the installation image](#1.-Download-the-installation-image)
+- [Debian GNU/Linux (amd64)](##Debian-GNU/Linux-(amd64))
+    - [1. Download the installation image](###1.-Download-the-installation-image)
         - [Verify authenticity of the image
-          file](#Recommended:-Verify-authenticity-of-the-image-file)
-            - [Verify the SHA-512 checksum](#Verify-the-SHA-512-checksum)
-            - [Verify signing key of the checksum file](#Verify-signing-key-of-the-checksum-file)
-            - [In case of failed authenticity verification](#In-case-of-failed-authenticity-verification)
+          file](####Recommended:-Verify-authenticity-of-the-image-file)
+            - [Verify the SHA-512 checksum](#####Verify-the-SHA-512-checksum)
+            - [Verify signing key of the checksum file](#####Verify-signing-key-of-the-checksum-file)
+            - [In case of failed authenticity verification](#####In-case-of-failed-authenticity-verification)
 
 ## Debian GNU/Linux (amd64)
 
