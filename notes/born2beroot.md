@@ -10,9 +10,14 @@
         - [Verify signing key of the checksum file](#verify-signing-key-of-the-checksum-file)
         - [In case of failed authenticity verification](#in-case-of-failed-authenticity-verification)
 
-# Debian GNU/Linux for 64-bit PC
+# Debian GNU/Linux
 
-This document is *immensely* supported by the documentation provided by Debian:
+This document walks through the installation and configuration of **Debian
+GNU/Linux for 64-bit PC (amd64)** as a virtual machine using **VirtualBox** as
+the hypervisor.
+
+The information here presented is *immensely* supported by the documentation
+provided by Debian:
 
 - [Debian GNU/Linux Installation Guide
   (amd64)](https://www.debian.org/releases/stable/amd64/install.en.pdf)
@@ -127,3 +132,15 @@ A failed authenticity check requires action:
     - If the failure persists, try a different network and machine.
     - If the failure persists and is reproducible, report it to the **Debian
       Security Team** (security@debian.org)
+
+## 2. Create the virtual machine
+
+### 2.1 If necessary, install VirtualBox
+
+As per subject requirements, we are required to use **VirtualBox** as our hypervisor software.
+
+> *For Apple silicon Macs (M1 and later), you might want to use [UTM](https://mac.getutm.app/) instead.*
+
+### 2.2 Create a new VM in VirtualBox
+
+// ...
